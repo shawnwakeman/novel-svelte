@@ -1,5 +1,5 @@
 {
-	"name": "novel-svelte",
+	"name": "@wakemanshawn/novel-svelte-shawnwakeman",
 	"version": "0.1.7",
 	"scripts": {
 		"dev": "vite dev",
