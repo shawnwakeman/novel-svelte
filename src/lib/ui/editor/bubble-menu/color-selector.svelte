@@ -21,7 +21,7 @@
 		},
 		{
 			name: 'Purple',
-			color: '#9333EA'
+			color: '#008A00'
 		},
 		{
 			name: 'Red',
