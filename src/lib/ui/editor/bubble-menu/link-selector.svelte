@@ -5,7 +5,7 @@
 
 	export let editor: Editor;
 	export let isOpen: boolean;
-
+    let linkUrl;
 	let inputRef: HTMLInputElement | null;
 </script>
 
@@ -31,6 +31,8 @@
 			on:submit={(e) => {
 				e.preventDefault();
 				const input = anyify(e.target)[0];
+                console.log(input.value);
+                
 				const url = getUrlFromString(input.value);
 				url && editor.chain().focus().setLink({ href: url }).run();
 				isOpen = false;
@@ -51,6 +53,8 @@
 					type="button"
 					class="flex items-center rounded-sm p-1 text-red-600 transition-all hover:bg-red-100 dark:hover:bg-red-800"
 					on:click={() => {
+                        linkUrl = editor.getAttributes('link').href; // Storing the link URL before removal
+                        console.log(linkUrl);
 						editor.chain().focus().unsetLink().run();
 						isOpen = false;
 					}}

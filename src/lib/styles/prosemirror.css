@@ -28,7 +28,7 @@
 	}
 
 	&.ProseMirror-selectednode {
-		outline: 3px solid #5abbf7;
+		outline: 3px solid #6cf75a;
 		filter: brightness(90%);
 	}
 }

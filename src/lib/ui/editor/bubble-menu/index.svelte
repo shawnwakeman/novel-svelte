@@ -123,6 +123,7 @@
 >
 	<NodeSelector {editor} bind:isOpen={$isNodeSelectorOpen} />
 	<LinkSelector {editor} bind:isOpen={$isLinkSelectorOpen} />
+ 
 	<div class="flex">
 		{#each items as item, index (index)}
 			<button
